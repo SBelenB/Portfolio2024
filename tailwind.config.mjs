@@ -4,6 +4,10 @@ export default {
 	darkMode: 'class',
 	theme: {
 		extend: {},
+		colors: {
+			'main-purple': '#986f93',
+			'cta-purple': '#924bb4'
+		},
 	},
 	plugins: [],
 }
