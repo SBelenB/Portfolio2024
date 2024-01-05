@@ -4,32 +4,35 @@ import Card from "../components/Card.astro";
 import LinkedInIcon from "../components/icons/LinkedIn.astro";
 import GitHubIcon from "../components/icons/GitHub.astro";
 import SocialLink from "../components/SocialLink.astro";
+import Container from "../components/Container.astro";
 ---
 
 <Layout title="Portfolio de Belén Gimenez. Programadora, Desarrolladora Web y Analista de Datos."
 description="Contrata a Belén para crear tu aplicación web o para realizar tu proyecto de análisis de datos.">
-	<main>
-		<section class="w-full lg:w-[714px] mx-auto py-40">
-			<img
-				class="rounded-full size-40 float-right"
+	<main class="px-4">
+		<Container class="py-10 lg:py-40 pb-12 lg:pb-24">
+			<span class="flex justify-center items-center lg:float-right">
+				<img
+				class="rounded-full size-48"
 				src="https://avatars.githubusercontent.com/u/90286485?v=4"
 				alt="belen photo"
-			/>
+				/>
+			</span>
 
 			<p class="font-semibold">Hi I am</p>
 			<p class="text-main-purple text-lg font-semibold" style="letter-spacing: 0.96px;">Belén Gimenez</p>
 
-			<h1 class="text-white text-5xl font-bold pb-4 py-1">
-				Web Developer<br />
-				<span class="ml-40">& Data Analyst</span>
+			<h1 class="text-white text-2xl md:text-4xl lg:text-5xl font-bold pb-4 py-1">
+				Web Developer
+				<span class="lg:ml-40">& Data Analyst</span>
 			</h1>
 
-			<h2 class="text-xl text-wrap">
-				<span class="opacity-80">
+			<h2 class="text-xl text-balance">
+				<span class="opacity-75">
 					Skilled in crafting innovative solutions to complex
-					problems.
-				</span>
-				<span class=""> Let's bring your digital ideas to life!</span>
+					problems.</span>
+				<span class="text-light-pink">
+					 Let's bring your digital ideas to life!</span>
 			</h2>
 
 			<nav class="flex gap-x-4 mt-8">
@@ -40,6 +43,10 @@ description="Contrata a Belén para crear tu aplicación web o para realizar tu 
 					<GitHubIcon class="size-6" />
 				</SocialLink>
 			</nav>
-		</section>
+		</Container>
+
+		<Container id="projects">
+			
+		</Container>
 	</main>
 </Layout>

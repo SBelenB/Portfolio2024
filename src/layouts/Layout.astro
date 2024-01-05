@@ -1,6 +1,7 @@
 ---
 import '@fontsource/poppins';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 interface Props {
 	title: string;
 	description: string;
@@ -26,6 +27,7 @@ const { description, title } = Astro.props;
 
 		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
@@ -35,13 +37,20 @@ const { description, title } = Astro.props;
 	
 	html {
 		font-family: "Poppins", system-ui, sans-serif;
+		scroll-behavior: smooth;
 	}
 	
 	body {
 		background: #1E1E1E;
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
+		min-height: 100vh;
 		overflow-x: hidden;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
 	}
 </style>

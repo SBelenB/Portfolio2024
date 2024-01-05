@@ -5,8 +5,9 @@ export default {
 	theme: {
 		extend: {},
 		colors: {
-			'main-purple': '#986f93',
-			'cta-purple': '#924bb4'
+			'main-purple': '#986F93',
+			'cta-purple': '#924BB4',
+			'light-pink': '#F1C1F1',
 		},
 	},
 	plugins: [],
