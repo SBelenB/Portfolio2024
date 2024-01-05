@@ -1,0 +1,72 @@
+---
+const PROJECTS = [
+    {
+        title: "Project 1",
+        description: "Lorem ipsum dolor sit",
+        link: "#",
+        github: "#",
+        image: "https://via.placeholder.com/300x200",
+        tags: ["HTML", "CSS", "JavaScript"],
+    },
+];
+---
+
+{
+    PROJECTS.map(({ image, title, description, tags }) => (
+        <article class="lg:mb-20">
+            <img src={image} alt={`captura de pantalla del proyecto ${title}`} />
+            <ul class="flex">
+                {tags.map((tag) => (
+                    <li>{tag}</li>
+                ))}
+            </ul>
+            <h3>{title}</h3>
+            <p>{description}</p>
+        </article>
+    ))
+}
+
+{
+    PROJECTS.map(({ image, title, description, tags }) => (
+        <article class="lg:mb-20">
+            <img src={image} alt={`captura de pantalla del proyecto ${title}`} />
+            <ul class="flex">
+                {tags.map((tag) => (
+                    <li>{tag}</li>
+                ))}
+            </ul>
+            <h3>{title}</h3>
+            <p>{description}</p>
+        </article>
+    ))
+}
+
+{
+    PROJECTS.map(({ image, title, description, tags }) => (
+        <article class="lg:mb-20">
+            <img src={image} alt={`captura de pantalla del proyecto ${title}`} />
+            <ul class="flex">
+                {tags.map((tag) => (
+                    <li>{tag}</li>
+                ))}
+            </ul>
+            <h3>{title}</h3>
+            <p>{description}</p>
+        </article>
+    ))
+}
+
+{
+    PROJECTS.map(({ image, title, description, tags }) => (
+        <article class="lg:mb-20">
+            <img src={image} alt={`captura de pantalla del proyecto ${title}`} />
+            <ul class="flex">
+                {tags.map((tag) => (
+                    <li>{tag}</li>
+                ))}
+            </ul>
+            <h3>{title}</h3>
+            <p>{description}</p>
+        </article>
+    ))
+}
