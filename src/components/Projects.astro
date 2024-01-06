@@ -1,6 +1,10 @@
 ---
 import Python from "./icons/Python.astro";
 import Django from "./icons/Django.astro";
+import Bootstrap from "./icons/Bootstrap.astro";
+import JS from "./icons/Javascript.astro";
+import Astr from "./icons/Astr.astro";
+import Tailwind from "./icons/Tailwind.astro";
 import ButtonLink from "../components/ButtonLink.astro";
 import PreviewBtn from "../components/buttons/PreviewBtn.astro";
 import CodeBtn from "../components/buttons/CodeBtn.astro";
@@ -11,6 +15,18 @@ const TAGS = {
     },
     DJANGO: {
         icon: Django,
+    },
+    BOOTSTRAP: {
+        icon: Bootstrap,
+    },
+    JS: {
+        icon: JS,
+    },
+    ASTRO: {
+        icon: Astr,
+    },
+    TAILWIND: {
+        icon: Tailwind,
     }
 }
 
@@ -18,37 +34,46 @@ const PROJECTS = [
     {
         title: "Block-B - Literary blog",
         description:
-            "Created with Python and Django. It's a blog featuring reviews, recommendations, and a variety of content related to books.",
+            "Built with Python, Django & Bootstrap. It's a blog featuring reviews, recommendations, and a variety of content related to books.",
         link: "https://grupo6info.pythonanywhere.com/",
         github: "https://github.com/SBelenB/Proyecto_Final",
         image: "/projects/block-b.webp",
-        tags: [TAGS.PYTHON, TAGS.DJANGO],
+        tags: [TAGS.PYTHON, TAGS.DJANGO, TAGS.BOOTSTRAP],
+    },
+    {
+        title: "Portfolio Web",
+        description:
+            "Created with JavaScript, Astro & Tailwind. A dedicated web portfolio highlighting my various projects, serving as a reflection of my work.",
+        link: "https://grupo6info.pythonanywhere.com/",
+        github: "https://github.com/SBelenB/Portfolio2024",
+        image: "/projects/portfolio.webp",
+        tags: [TAGS.JS, TAGS.ASTRO, TAGS.TAILWIND],
     },
 ];
 ---
 
 {
-    PROJECTS.map(({ image, title, description, tags }) => (
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
         <article class="lg:mb-20">
             <img
-                class="rounded mb-2"
+                class="rounded mb-4"
                 src={image}
                 alt={`captura de pantalla del proyecto ${title}`}
             />
-            <ul class="flex">
+            <ul class="flex gap-x-1">
                 {tags.map((tag) => (
                     <li>
-                        <tag.icon class="size-10" />
+                        <tag.icon class="size-6" />
                     </li>
                 ))}
             </ul>
-            <h3 class="text-2xl font-semibold text-main-purple mb-2">{title}</h3>
+            <h3 class="text-2xl font-semibold text-main-purple mt-2 mb-2">{title}</h3>
             <p class="text-1xl opacity-90 text-balance mb-4">{description}</p>
             <span class="flex gap-x-4">
-                <ButtonLink href="https://grupo6info.pythonanywhere.com/">
+                <ButtonLink href={link}>
                     <PreviewBtn />
                 </ButtonLink>
-                <ButtonLink href="https://github.com/SBelenB/Proyecto_Final">
+                <ButtonLink href={github}>
                     <CodeBtn />
                 </ButtonLink>
             </span>
