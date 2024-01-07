@@ -7,6 +7,7 @@ import SocialLink from "../components/SocialLink.astro";
 import Container from "../components/Container.astro";
 import CodeIcon from "../components/icons/Code.astro";
 import Projects from "../components/Projects.astro";
+import ContactIcon from "../components/icons/Contact.astro";
 ---
 
 <Layout
@@ -63,10 +64,37 @@ import Projects from "../components/Projects.astro";
 				<CodeIcon class="size-7" />
 				My Projects
 			</h2>
-			<p class="text-1xl opacity-80 mb-8 flex justify-center items-center">Placeholder text Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<p class="text-1xl opacity-80 mb-8 text-center text-balance">Imagine a universe where your ideas come to life with just a few keystrokes, that's the magic of coding! ✨</p>
 			<span class="grid lg:grid-cols-2 gap-x-16">
 				<Projects />
 			</span>
+		</Container>
+			
+		<Container id="about" class="lg:mb-20 mb-12">
+			<h2 class="text-3xl font-semibold opacity-90 mb-6 flex gap-x-3 justify-center items-center">
+				<CodeIcon class="size-7" />
+				About Me
+			</h2>
+			<div class="flex">
+				<img src="https://placehold.co/300x200" alt="image about me section">
+				<span class="text-1xl opacity-90 text-center">
+					<p>Hola, I'm Belén, a developer and data analyst from Argentina.</p>
+	
+					<p>Currently, I am embarking on the adventure of earning a Bachelor's degree in Data Analysis, where my days are a fusion of logic and creativity.</p>
+					<br>
+					
+					<p>I find joy in transforming code and raw data into impactful solutions.</p>
+					
+					<p>Beyond the confines of a screen, you might catch me sipping mate while contemplating data dashboards. 💻📊</p>
+				</span>
+			</div>
+		</Container>
+
+		<Container id="contact" class="lg:mb-20 mb-12">
+			<h2 class="text-3xl font-semibold opacity-90 mb-4 flex gap-x-3 justify-center items-center">
+				<ContactIcon class="size-7" />
+				Contact
+			</h2>
 		</Container>
 	</main>
 </Layout>
