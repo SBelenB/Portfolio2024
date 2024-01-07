@@ -1,0 +1,52 @@
+---
+import ContactIcon from "../components/icons/Contact.astro";
+---
+
+<div class="mx-auto max-w-screen-md">
+    <h2
+        class="mb-4 text-3xl font-semibold text-center opacity-90 flex gap-x-3 justify-center items-center">
+        <ContactIcon class="size-7" />
+        Contact
+    </h2>
+
+    <p class="mb-8 lg:mb-8 font-light text-center sm:text-xl">
+        <span class="text-cta-purple font-bold">Get in touch with me</span> – I'd love to hear from you!
+    </p>
+
+    <form action="https://formspree.io/f/mqkrkobq" method="POST" class="space-y-4 px-20">
+        <div>
+            <label for="email" class="block mb-2 text-sm font-medium">Your email</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="name@email.com"
+                required
+            />
+        </div>
+        <div>
+            <label for="subject" class="block mb-2 text-sm font-medium">Subject</label>
+            <input
+                type="text"
+                id="subject"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="Let me know how I can help you"
+                required
+            />
+        </div>
+        <div class="sm:col-span-2">
+            <label for="message" class="block mb-2 text-sm font-medium">Your message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Write your message..."></textarea>
+        </div>
+        <button
+            type="submit"
+            class="text-white bg-gradient-to-r from-cta-purple to-main-purple hover:bg-gradient-to-l focus:ring-1 focus:outline-none focus:ring-purple-200 dark:focus:ring-cta-purple font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 sm:w-fit"
+            >Send message</button>
+    </form>
+</div>

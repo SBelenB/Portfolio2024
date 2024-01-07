@@ -8,7 +8,7 @@ import Container from "../components/Container.astro";
 import CodeIcon from "../components/icons/Code.astro";
 import Projects from "../components/Projects.astro";
 import CoffeeIcon from "../components/icons/Coffee.astro";
-import ContactIcon from "../components/icons/Contact.astro";
+import ContactForm from "../components/Contact.astro";
 ---
 
 <Layout
@@ -41,7 +41,7 @@ import ContactIcon from "../components/icons/Contact.astro";
 			</h1>
 
 			<h2 class="text-xl text-balance">
-				<span class="opacity-75">
+				<span class="opacity-80">
 					Skilled in crafting innovative solutions to complex
 					problems.</span
 				>
@@ -79,7 +79,7 @@ import ContactIcon from "../components/icons/Contact.astro";
 			<div class="flex gap-x-8">
 				<img src="https://placehold.co/300x300" alt="image about me section">
 				<div class="text-1xl opacity-90 text-pretty">
-					<p class="mb-1">Hola, I'm Belén</span>, a <span class="text-main-purple">Developer</span> and <span class="text-main-purple">Data Analyst</span> from Argentina. 🇦🇷</p>
+					<p class="mb-1">Hola, I'm Belén, a <span class="text-main-purple font-bold">Developer</span> and <span class="text-main-purple font-bold">Data Analyst</span> from Argentina. 🇦🇷</p>
 	
 					<p class="mb-4">Currently, I am embarking on the adventure of earning a Bachelor's degree in Data Analysis, where my days are a fusion of logic and creativity.</p>
 					
@@ -90,11 +90,9 @@ import ContactIcon from "../components/icons/Contact.astro";
 			</div>
 		</Container>
 
+		<!-- Contact Section -->
 		<Container id="contact" class="lg:mb-20 mb-12">
-			<h2 class="text-3xl font-semibold opacity-90 mb-4 flex gap-x-3 justify-center items-center">
-				<ContactIcon class="size-7" />
-				Contact
-			</h2>
+			<ContactForm />
 		</Container>
 	</main>
 </Layout>
