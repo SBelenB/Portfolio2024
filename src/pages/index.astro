@@ -7,6 +7,7 @@ import SocialLink from "../components/SocialLink.astro";
 import Container from "../components/Container.astro";
 import CodeIcon from "../components/icons/Code.astro";
 import Projects from "../components/Projects.astro";
+import CoffeeIcon from "../components/icons/Coffee.astro";
 import ContactIcon from "../components/icons/Contact.astro";
 ---
 
@@ -72,21 +73,20 @@ import ContactIcon from "../components/icons/Contact.astro";
 			
 		<Container id="about" class="lg:mb-20 mb-12">
 			<h2 class="text-3xl font-semibold opacity-90 mb-6 flex gap-x-3 justify-center items-center">
-				<CodeIcon class="size-7" />
+				<CoffeeIcon class="size-7" />
 				About Me
 			</h2>
-			<div class="flex">
-				<img src="https://placehold.co/300x200" alt="image about me section">
-				<span class="text-1xl opacity-90 text-center">
-					<p>Hola, I'm Belén, a developer and data analyst from Argentina.</p>
+			<div class="flex gap-x-8">
+				<img src="https://placehold.co/300x300" alt="image about me section">
+				<div class="text-1xl opacity-90 text-pretty">
+					<p class="mb-1">Hola, I'm Belén</span>, a <span class="text-main-purple">Developer</span> and <span class="text-main-purple">Data Analyst</span> from Argentina. 🇦🇷</p>
 	
-					<p>Currently, I am embarking on the adventure of earning a Bachelor's degree in Data Analysis, where my days are a fusion of logic and creativity.</p>
-					<br>
+					<p class="mb-4">Currently, I am embarking on the adventure of earning a Bachelor's degree in Data Analysis, where my days are a fusion of logic and creativity.</p>
 					
-					<p>I find joy in transforming code and raw data into impactful solutions.</p>
+					<p class="mb-1 text-light-pink">I find joy in transforming code and raw data into impactful solutions.</p>
 					
 					<p>Beyond the confines of a screen, you might catch me sipping mate while contemplating data dashboards. 💻📊</p>
-				</span>
+				</div>
 			</div>
 		</Container>
 
