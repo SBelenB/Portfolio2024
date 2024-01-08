@@ -9,13 +9,13 @@ import ContactIcon from "../components/icons/Contact.astro";
         Contact
     </h2>
 
-    <p class="mb-8 lg:mb-8 font-light text-center sm:text-xl">
+    <p class="mb-8 font-light text-center sm:text-xl opacity-80">
         <span class="text-cta-purple font-bold">Get in touch with me</span> – I'd love to hear from you!
     </p>
 
-    <form action="https://formspree.io/f/mqkrkobq" method="POST" class="space-y-4 px-20">
+    <form action="https://formspree.io/f/mqkrkobq" method="POST" class="space-y-4 lg:px-20">
         <div>
-            <label for="email" class="block mb-2 text-sm font-medium">Your email</label>
+            <label for="email" class="block mb-2 text-sm font-medium opacity-80">Your email</label>
             <input
                 type="email"
                 name="email"
@@ -26,7 +26,7 @@ import ContactIcon from "../components/icons/Contact.astro";
             />
         </div>
         <div>
-            <label for="subject" class="block mb-2 text-sm font-medium">Subject</label>
+            <label for="subject" class="block mb-2 text-sm font-medium opacity-80">Subject</label>
             <input
                 type="text"
                 id="subject"
@@ -36,7 +36,7 @@ import ContactIcon from "../components/icons/Contact.astro";
             />
         </div>
         <div class="sm:col-span-2">
-            <label for="message" class="block mb-2 text-sm font-medium">Your message</label>
+            <label for="message" class="block mb-2 text-sm font-medium opacity-80">Your message</label>
             <textarea
                 id="message"
                 name="message"

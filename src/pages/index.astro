@@ -19,7 +19,7 @@ import ContactForm from "../components/Contact.astro";
 		<Container class="py-10 lg:py-40 pb-12 lg:pb-24">
 			<span class="flex justify-center items-center lg:float-right">
 				<img
-					class="rounded-full size-48"
+					class="rounded-full shadow-md shadow-white/20 size-48"
 					src="https://avatars.githubusercontent.com/u/90286485?v=4"
 					alt="belen photo"
 				/>
@@ -76,11 +76,12 @@ import ContactForm from "../components/Contact.astro";
 				<CoffeeIcon class="size-7" />
 				About Me
 			</h2>
-			<div class="flex gap-x-8">
-				<img src="https://placehold.co/300x300" alt="image about me section">
-				<div class="text-1xl opacity-90 text-pretty">
-					<p class="mb-1">Hola, I'm Belén, a <span class="text-main-purple font-bold">Developer</span> and <span class="text-main-purple font-bold">Data Analyst</span> from Argentina. 🇦🇷</p>
-	
+			
+			<p class="text-1xl text-center mb-1 opacity-90">Hola, I'm Belén, a <span class="text-main-purple font-bold">Developer</span> and <span class="text-main-purple font-bold">Data Analyst</span> from Argentina. 🇦🇷</p>
+
+			<div class="md:flex md:gap-x-8">
+				<img class="h-auto rounded shadow-md shadow-white/20 mb-4 md:w-1/2" src="../code-screen.webp" alt="image about me section">
+				<div class="text-1xl opacity-90 text-pretty">	
 					<p class="mb-4">Currently, I am embarking on the adventure of earning a Bachelor's degree in Data Analysis, where my days are a fusion of logic and creativity.</p>
 					
 					<p class="mb-1 text-light-pink font-bold">I find joy in transforming code and raw data into impactful solutions.</p>
