@@ -1,10 +1,12 @@
 ---
-import Python from "./icons/Python.astro";
-import Django from "./icons/Django.astro";
-import Bootstrap from "./icons/Bootstrap.astro";
-import JS from "./icons/Javascript.astro";
-import Astr from "./icons/Astr.astro";
-import Tailwind from "./icons/Tailwind.astro";
+import Python from "./icons/stack/Python.astro";
+import Django from "./icons/stack/Django.astro";
+import Bootstrap from "./icons/stack/Bootstrap.astro";
+import MySQL from "./icons/stack/MySQL.astro";
+import JS from "./icons/stack/Javascript.astro";
+import Astr from "./icons/stack/Astr.astro";
+import Tailwind from "./icons/stack/Tailwind.astro";
+import Firebase from "./icons/stack/Firebase.astro";
 import ButtonLink from "../components/ButtonLink.astro";
 import PreviewBtn from "../components/buttons/PreviewBtn.astro";
 import CodeBtn from "../components/buttons/CodeBtn.astro";
@@ -19,6 +21,9 @@ const TAGS = {
     BOOTSTRAP: {
         icon: Bootstrap,
     },
+    MYSQL: {
+        icon: MySQL,
+    },
     JS: {
         icon: JS,
     },
@@ -27,27 +32,30 @@ const TAGS = {
     },
     TAILWIND: {
         icon: Tailwind,
-    }
+    },
+    FIREBASE: {
+        icon: Firebase,
+    },
 }
 
 const PROJECTS = [
     {
         title: "Block-B - Literary blog",
         description:
-            "Built with Python, Django & Bootstrap. It's a blog featuring reviews, recommendations, and a variety of content related to books.",
+            "Contributed to the backend development of a dynamic book blog using Python and Django, and MySQL for database connections. Implemented secure user authentication, including account creation and login, and posts functionalities. Collaborated on the frontend UI design. This group project demonstrates my full-stack development and collaborative skills.",
         link: "https://grupo6info.pythonanywhere.com/",
         github: "https://github.com/SBelenB/Proyecto_Final",
         image: "/projects/block-b.webp",
-        tags: [TAGS.PYTHON, TAGS.DJANGO, TAGS.BOOTSTRAP],
+        tags: [TAGS.PYTHON, TAGS.DJANGO, TAGS.BOOTSTRAP, TAGS.MYSQL],
     },
     {
         title: "Portfolio Web",
         description:
-            "Created with JavaScript, Astro & Tailwind. A dedicated web portfolio highlighting my various projects, serving as a reflection of my work.",
+            "Interactive single-page personal portfolio, built with the cutting-edge Astro framework for fast performance and optimized SEO. Tailwind CSS lets me craft a sleek and responsive UI, while the contact form integrates with the Firebase Realtime Database API. Explore my projects, experience the smooth navigation, and get a taste of my dedication to web development.",
         link: "#",
         github: "https://github.com/SBelenB/Portfolio2024",
         image: "/projects/portfolio.webp",
-        tags: [TAGS.JS, TAGS.ASTRO, TAGS.TAILWIND],
+        tags: [TAGS.JS, TAGS.ASTRO, TAGS.TAILWIND, TAGS.FIREBASE],
     },
 ];
 ---
