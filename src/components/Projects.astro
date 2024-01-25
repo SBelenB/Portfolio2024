@@ -10,6 +10,7 @@ import Firebase from "./icons/stack/Firebase.astro";
 import ButtonLink from "../components/ButtonLink.astro";
 import PreviewBtn from "../components/buttons/PreviewBtn.astro";
 import CodeBtn from "../components/buttons/CodeBtn.astro";
+import Java from "./icons/stack/Java.astro";
 
 const TAGS = {
     PYTHON: {
@@ -23,6 +24,9 @@ const TAGS = {
     },
     MYSQL: {
         icon: MySQL,
+    },
+    JAVA: {
+        icon: Java,
     },
     JS: {
         icon: JS,
@@ -49,13 +53,12 @@ const PROJECTS = [
         tags: [TAGS.PYTHON, TAGS.DJANGO, TAGS.BOOTSTRAP, TAGS.MYSQL],
     },
     {
-        title: "Portfolio Web",
+        title: "Patient Info System",
         description:
-            "Interactive single-page personal portfolio, built with the cutting-edge Astro framework for fast performance and optimized SEO. Tailwind CSS lets me craft a sleek and responsive UI, while the contact form integrates with the Firebase Realtime Database API. Explore my projects, experience the smooth navigation, and get a taste of my dedication to web development.",
-        link: "#",
-        github: "https://github.com/SBelenB/Portfolio2024",
-        image: "/projects/portfolio.webp",
-        tags: [TAGS.JS, TAGS.ASTRO, TAGS.TAILWIND, TAGS.FIREBASE],
+            "CRUD application built with Java, designed for patient registration in a medical center. It allows storing the patient's name, last name, and phone number, searching for data associated with patient ID numbers, and modifying or deleting the record.",
+        github: "https://github.com/SBelenB/CRUDRegistroDePacientes",
+        image: "",
+        tags: [TAGS.JAVA],
     },
 ];
 ---
