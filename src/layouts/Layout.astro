@@ -33,21 +33,30 @@ const { description, title } = Astro.props;
 </html>
 <style is:global>
 	:root {
-		color-scheme: dark;
+		color-scheme: system-ui;
 	}
 	
 	html {
 		font-family: "Poppins", system-ui, sans-serif;
 		scroll-behavior: smooth;
+		background-color: #f0e5ee;
+	}
+
+	html.dark {
+    background-color: #1E1E1E;
+    color: #fff;
 	}
 	
 	body {
-		background: #1E1E1E;
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
 		overflow-x: hidden;
 	}
+
+	.dark .nav-links a {
+    color: #fff;
+}
 
 	@media (prefers-reduced-motion: reduce) {
 		html {

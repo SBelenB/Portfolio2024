@@ -9,6 +9,7 @@ export default {
 				'main-pink': '#c97b97',
 				'cta-purple': '#924BB4',
 				'light-pink': '#F1C1F1',
+				'cta-purple-dk': '#522f61',
 			},
 		},
 	},
