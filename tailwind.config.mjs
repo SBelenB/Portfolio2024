@@ -11,6 +11,10 @@ export default {
 				'cta-purple': '#924BB4',
 				'light-pink': '#F1C1F1',
 				'cta-purple-dk': '#522f61',
+				'bg-shadow-pink': '#FF00B6',
+			},
+			boxShadow: {
+				'4s': '0 0 15px rgba(0 0 0 / 0.1), 0 0 20px rgba(0 0 0 / 0.1)',
 			},
 		},
 	},
