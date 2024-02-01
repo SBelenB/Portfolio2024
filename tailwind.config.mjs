@@ -5,6 +5,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				'main-grey': '#1E1E1E',
 				'main-purple': '#986F93',
 				'main-pink': '#c97b97',
 				'cta-purple': '#924BB4',
