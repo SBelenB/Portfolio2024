@@ -1,12 +1,7 @@
 ---
 import Python from "./icons/stack/Python.astro";
 import Django from "./icons/stack/Django.astro";
-import Bootstrap from "./icons/stack/Bootstrap.astro";
 import MySQL from "./icons/stack/MySQL.astro";
-import JS from "./icons/stack/Javascript.astro";
-import Astr from "./icons/stack/Astr.astro";
-import Tailwind from "./icons/stack/Tailwind.astro";
-import Firebase from "./icons/stack/Firebase.astro";
 import ButtonLink from "../components/ButtonLink.astro";
 import PreviewBtn from "../components/buttons/PreviewBtn.astro";
 import CodeBtn from "../components/buttons/CodeBtn.astro";
@@ -19,26 +14,11 @@ const TAGS = {
     DJANGO: {
         icon: Django,
     },
-    BOOTSTRAP: {
-        icon: Bootstrap,
-    },
     MYSQL: {
         icon: MySQL,
     },
     JAVA: {
         icon: Java,
-    },
-    JS: {
-        icon: JS,
-    },
-    ASTRO: {
-        icon: Astr,
-    },
-    TAILWIND: {
-        icon: Tailwind,
-    },
-    FIREBASE: {
-        icon: Firebase,
     },
 }
 
@@ -50,7 +30,7 @@ const PROJECTS = [
         link: "https://grupo6info.pythonanywhere.com/",
         github: "https://github.com/SBelenB/Proyecto_Final",
         image: "/projects/block-b.webp",
-        tags: [TAGS.PYTHON, TAGS.DJANGO, TAGS.BOOTSTRAP, TAGS.MYSQL],
+        tags: [TAGS.PYTHON, TAGS.DJANGO, TAGS.MYSQL],
     },
     {
         title: "Patients Info System",

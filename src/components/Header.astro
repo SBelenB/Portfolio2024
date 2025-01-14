@@ -1,19 +1,18 @@
 ---
 import Toggle from './ThemeToggle.astro';
 ---
-<header class="flex justify-between px-4 items-center py-5 w-full mx-auto lg:w-[940px]">
-    <a href="#">
+<header class="flex justify-center px-4 items-center py-5 w-full mx-auto lg:w-[940px]">
+    <a class="px-5" href="#">
         <img class="size-12"
         src="../logo.webp"
         alt="logo"
         title="Website home"/>
     </a>
 
-    <nav class="flex flex-row opacity-80 gap-x-3 md:gap-x-10">
+    <nav class="flex flex-row opacity-80 gap-x-3 md:gap-x-8">
         <a href="#top" title="Home">Home</a>
         <a href="#projects" title="Projects">Projects</a>
         <a href="#about" title="About Me">About Me</a>
-        <a href="#contact" title="Contact">Contact</a>
         <Toggle />
     </nav>
     
